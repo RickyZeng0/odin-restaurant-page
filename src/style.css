@@ -9,6 +9,9 @@ body {
     flex-direction: column;
     align-items: center;
     background: url(./backgroud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -32,6 +35,10 @@ button {
     font-size: 20px;
 }
 
+div {
+    text-align: center;
+}
+
 button:hover {
     border-bottom: 2px solid white;
 }
@@ -39,8 +46,8 @@ button:hover {
 #content {
     margin-top: 45px;
     width: 550px;
-    height: 500px;
-    background-color: rgba(20, 19, 19, 0.7);
+    min-height: 500px;
+    background-color: rgba(90, 86, 86, 0.8);
     color: white;
 }
 
@@ -66,4 +73,36 @@ button:hover {
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
+}
+
+.menu {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.menu-card {
+    background-color: rgba(19, 19, 19, 0.6);
+    padding: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-image {
+    background-image: url(./image.jpg);
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: large;
+    color: rgb(220, 239, 255);
 }

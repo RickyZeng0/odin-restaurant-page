@@ -1,4 +1,5 @@
 import "./style.css";
+import { loadMenu } from "./menu.js";
 
 function cleanContent(){
     const containerDiv = document.querySelector("#content");
@@ -25,6 +26,9 @@ function loadHomePage(){
     containerDiv.appendChild(div);
 }
 
+
+
 cleanContent();
-loadHomePage();
+//loadHomePage()
+loadMenu();
 
