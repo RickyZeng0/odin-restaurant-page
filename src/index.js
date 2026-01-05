@@ -1,5 +1,6 @@
 import "./style.css";
 import { loadMenu } from "./menu.js";
+import { loadContact } from "./contact.js";
 
 function cleanContent(){
     const containerDiv = document.querySelector("#content");
@@ -30,5 +31,5 @@ function loadHomePage(){
 
 cleanContent();
 //loadHomePage()
-loadMenu();
-
+//loadMenu();
+loadContact();

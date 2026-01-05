@@ -106,3 +106,12 @@ button:hover {
     font-size: large;
     color: rgb(220, 239, 255);
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
