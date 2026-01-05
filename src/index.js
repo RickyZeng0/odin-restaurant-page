@@ -21,6 +21,7 @@ function loadHomePage(){
     div.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum delectus eum ipsum ab quia nulla eafuga quis eos?";
 
     const containerDiv = document.querySelector("#content");
+    containerDiv.classList.remove("menu","contact");
     containerDiv.classList.add("home");
     containerDiv.appendChild(titleDiv);
     containerDiv.appendChild(imageDiv);
@@ -28,8 +29,14 @@ function loadHomePage(){
 }
 
 
+const homeBtn = document.querySelector("#home-btn");
+homeBtn.addEventListener("click", ()=>{cleanContent();loadHomePage()});
 
-cleanContent();
-//loadHomePage()
-//loadMenu();
-loadContact();
+const menuBtn = document.querySelector("#menu-btn");
+menuBtn.addEventListener("click", ()=>{cleanContent();loadMenu()});
+
+const contactBtn = document.querySelector("#contact-btn");
+contactBtn.addEventListener("click", ()=>{cleanContent();loadContact()});
+
+
+loadHomePage();

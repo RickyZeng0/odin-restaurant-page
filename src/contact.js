@@ -9,6 +9,7 @@ function loadContact(){
     addressDiv.textContent = "Address : Hollywood Boulevard 42, Los Angeles, USA";
 
     const containerDiv = document.querySelector("#content");
+    containerDiv.classList.remove("home","menu");
     containerDiv.classList.add("contact");
     containerDiv.appendChild(teleDiv);
     containerDiv.appendChild(emailDiv);

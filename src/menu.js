@@ -16,6 +16,7 @@ function loadCard(){
     cardDiv.appendChild(div);
 
     const containerDiv = document.querySelector("#content");
+    containerDiv.classList.remove("home","contact");
     containerDiv.classList.add("menu");
     containerDiv.appendChild(cardDiv);
 }
